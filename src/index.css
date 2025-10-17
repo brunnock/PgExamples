@@ -1,0 +1,102 @@
+* {
+    font-family:sans-serif;
+}
+
+#root {
+    max-width:60em;
+    margin:auto;
+}
+
+h1 {
+    text-align:center;
+}
+
+section {
+    background-color:#eef;
+    border:1px solid #888;
+    padding-bottom:2em;
+    margin:2em 0;
+    padding:1ex;
+    display: grid;
+    grid-template-areas:
+	'title title'
+	'text text'
+	'textarea output'
+	'buttons buttons';
+}
+
+h3 {
+    text-align:center;
+    grid-area:title;
+    margin-bottom:1ex;
+}
+
+p {
+    max-width:30em;
+    margin:1em auto;
+}
+
+div.text {
+    grid-area:text;
+    max-width:30em;
+    margin:auto;
+}
+
+textarea, output {
+    padding: 1ex;
+    border: 3px ridge #bbb;
+    margin:1ex;
+    font-family:monospace;
+}
+
+output {
+    overflow: scroll;
+    max-height:30em;
+    background-color:#fff;
+}
+
+output#singleRecord table {
+    border:none;
+    border-spacing: 0 1em;
+}
+
+output#singleRecord th {
+    text-align:right;
+    padding:.5ex;
+    padding-right:0;
+}
+
+output#singleRecord td {
+    background-color:#f4f4f4;
+}
+
+div.wide {
+    border:1px solid blue;
+    width:99%;
+}
+
+div.buttons {
+    text-align:center;
+    grid-area: buttons;
+
+}
+
+button {
+    padding:1em;
+    margin:0 1em;
+    border:3px solid #888;
+    border-radius:1em;
+    background-color:#fefefe;
+}
+
+button:hover {
+    border-color:#0f0;
+}
+
+th {
+    text-align:left;
+}
+
+footer {
+    text-align:center;
+}
