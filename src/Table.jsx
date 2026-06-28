@@ -10,7 +10,7 @@ function Table({table='',fields,data}) {
 	{data.map((x,indx)=>
 	  <tr key={'tr'+indx}>
 	    {Object.values(x).map((y,indy)=>
-	      <td key={table+'TD'+indx+indy}>{y}</td>)}
+	      <td key={table+'TD'+indx+indy}>{y.toString()}</td>)}
 	  </tr>
 	)}
       </tbody>
